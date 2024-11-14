@@ -33,8 +33,6 @@ int main(void){
     }
     cout << endl << "Total area is " << round(perimeter) << endl;
 
-    // I want to put them side-by-side
-    // And see how much space they use (width and height)
     cout << "Placing side-by-side..." << endl;
     double width = 0;
     double height = 0;
@@ -47,15 +45,13 @@ int main(void){
     cout << "Total width is " << round(width) << endl;
     cout << "Total height is " << round(height) << endl;
 
-    // I now try to do the same, but minimizing width
-    // First, I rotate those shapes that need it
+
     for(int i=0; i<shapes.size(); i++){
         if(shapes[i]->width() > shapes[i]->height()) {
             shapes[i]->rotate();
         }
     }
-    // Then I proceed as before
-    // Then I proceed as before
+
     cout << "Placing side-by-side..." << endl;
     width = 0;
     height = 0;
