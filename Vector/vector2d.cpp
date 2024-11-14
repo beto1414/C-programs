@@ -10,15 +10,12 @@ v2d::v2d(double a, double b)
 }
 
 v2d::v2d(const v2d & v) {
-    // Write your code here
+
     x = v.x;
     y = v.y;
 }
 
-v2d::~v2d() {
-    // Write your code here
-
-}
+v2d::~v2d() {}
 
 v2d & v2d::operator=(const v2d &v) 
 {
